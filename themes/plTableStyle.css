@@ -1,0 +1,242 @@
+.el-table__virtual-wrapper .el-table__body {
+  width: 100%;
+}
+.el-table--fixed__virtual-wrapper {
+  width: auto!important;
+}
+.el-table__virtual-wrapper .el-table__body {
+  width: 100%;
+}
+.el-table--fixed__virtual-wrapper {
+  width: auto!important;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5555 !important;
+  background-color: #000;
+  opacity: .2;
+}
+.ant-table-scroll {
+  width: 100%;
+}
+.tableBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*overflow: hidden;*/
+}
+.tableBox .plTbaleTotal .el-table__footer-two {
+  border-top: 1px solid #c7c9cc;
+}
+.tableBox .pl-table-header-border-right-none th {
+  border-right: none !important;
+}
+.tableBox .el-table th.is-leaf {
+  border-bottom: none !important;
+}
+.tableBox .el-table__body {
+  background-color: transparent !important;
+}
+.tableBox .el-table--border th .pltableDragIcon {
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100%;
+}
+.tableBox .el-table--border th .pltableDragIcon:hover {
+  background-color: #c7c9cc;
+}
+.tableBox .el-table--border th .pltableDragIcon i {
+  background-color: #c7c9cc;
+  right: 1px;
+  top: 25%;
+  display: block;
+  height: 50%;
+  width: 1px;
+  position: absolute;
+}
+.tableBox .el-table__footer-wrapper {
+  margin-top: 0px !important;
+}
+.tableBox .el-table__footer-wrapper td {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.tableBox .el-table__fixed-footer-wrapper tbody td {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.tableBox .el-table__fixed::before,
+.tableBox .el-table__fixed-right::before {
+  background-color: transparent !important;
+}
+.tableBox .el-table__header-wrapper {
+  background: #f7f7f7;
+}
+.tableBox .el-table__fixed-right th,
+.tableBox .el-table__fixed-right td {
+  border-right: none;
+}
+.tableBox .el-table__expand-icon > .el-icon {
+  margin-left: -7px;
+  margin-top: -3px;
+  top: 32%;
+}
+.tableBox .el-table__footer-wrapper {
+  width: calc(100% - 9px) !important;
+  background-color: #f5f7fa !important;
+}
+.tableBox .el-table__fixed-right {
+  box-shadow: -5px 0 7px rgba(0, 0, 0, 0.12);
+}
+.tableBox .el-table__fixed {
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.12);
+}
+.tableBox ul,
+.tableBox li {
+  list-style: none;
+}
+.tableBox .el-table th {
+  background: #f7f7f7;
+}
+.tableBox .el-table--border th.gutter:last-of-type {
+  border: none !important;
+}
+.tableBox .el-table th {
+  padding: 8px 0 !important;
+}
+.tableBox .el-table td {
+  padding: 15px 0 !important;
+}
+.tableBox .el-table--group::after,
+.tableBox .el-table--border::after {
+  width: 0 !important;
+}
+.tableBox .el-table::before {
+  height: 0 !important;
+}
+.tableBox .el-table--group,
+.tableBox .el-table--border {
+  border: none !important;
+}
+.tableBox .el-table__fixed-right-patch {
+  border-color: transparent !important;
+  z-index: 3;
+  top: 0 !important;
+  border-bottom: none !important;
+}
+.tableBox .ant-table-scroll {
+  overflow: auto;
+  /*overflow-x: hidden;*/
+}
+.tableBox .el-table__fixed-right {
+  /*bottom: 10px !important;*/
+}
+.tableBox .myPagination {
+  float: right;
+  padding-top: 20px;
+}
+.tableBox .myPagination .el-pagination {
+  color: #606266 !important;
+}
+.tableBox .plDialog {
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 5556 !important;
+  background-color: white;
+  transition: width .3s;
+}
+.tableBox .plDialog .checkListBox {
+  width: 100%;
+  height: calc(100% - 110px);
+  overflow-y: auto;
+}
+.tableBox .plDialog .checkListBox ul li {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px 17px 10px 20px;
+  height: 40px;
+}
+.tableBox .plDialog .checkListBox ul li:hover {
+  background-color: #eff2f7;
+}
+.tableBox .plDialog .checkListBox ul li .iconfont {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  float: right;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  line-height: 23px;
+}
+.tableBox .plDialog .checkListBox ul li .iconfont:hover {
+  color: #bc1e21;
+  cursor: pointer;
+}
+.tableBox .plDialog .checkListBox::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   background-color: rgba(144, 147, 153, 0.5);
+ }
+/*!*Div失去焦点滑块样式*!*/
+/*.tableBox .plDialog .checkListBox:focus::-webkit-scrollbar-thumb {*/
+  /*background-color: rgba(255, 255, 255, 0);*/
+/*}*/
+.tableBox .plDialog .table-cus-header {
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+  padding-left: 20px;
+  color: #415161;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e7e9f1;
+}
+.tableBox .plDialog .table-cus-footer {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.tableBox .plDialog .table-cus-footer .el-button {
+  min-width: 82px !important;
+  padding: 9px 20px !important;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0);/*其他样式，比如圆角等*/
+}
+.el-table__body-wrapper::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(144, 147, 153, 0.5);
+}
+/*!*Div失去焦点滑块样式*!*/
+/*.el-table__body-wrapper::focus::-webkit-scrollbar-thumb {*/
+ /*background-color: rgba(255, 255, 255, 0);*/
+/*}*/
+.el-table__body-wrapper {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.tableBox .pl-disabled {
+  cursor: default!important;
+  opacity: .4;
+  -ms-pointer-events: none;
+  pointer-events: none;
+}
+/*.tableBox .disabled .el-checkbox__input.is-checked .el-checkbox__inner {*/
+  /*!*border-color: #d5dae0 !important;*!*/
+/*}*/

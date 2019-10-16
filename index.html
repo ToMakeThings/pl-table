@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入element-ui的样式-->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!--引入plTable的样式-->
+    <link rel="stylesheet" href="https://unpkg.com/pl-table/themes/plTableStyle.css">
+    <title>测试我的Vue组件库</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myApp">
+        <!-- 使用 useVirtual 属性开启虚拟滚动 使用虚拟滚动时，必须要固定表格高度和行高 -->
+        <!-- 1. 使用格式外层必须包含一层父级元素，且必须设置高度 2. this.$refs.plTable.setHeight() // 当窗口高度变化或者外层高度变化，就调用该方法 -->
+        <div style="height: 500px">
+            <!--<pl-table :datas="tableData" height="400" useVirtual
+            注意点： 表格插件并不需要height属性字段(跟ele不同)，因为涉及分页组件。里面会去计算高度，只需要父级外层设置高度即可
+            row-height属性很重要 请看表格属性列表
+            -->
+            <pl-table :datas="tableData" :use-virtual="true" :row-height="54">
+                <el-table-column
+                        type="index"
+                        width="100"
+                        fixed
+                ></el-table-column>
+                <el-table-column
+                        prop="date"
+                        label="日期"
+                        width="180">
+                </el-table-column>
+                <el-table-column
+                        prop="name"
+                        label="姓名"
+                        width="180">
+                </el-table-column>
+                <el-table-column
+                        prop="address"
+                        label="地址">
+                </el-table-column>
+            </pl-table>
+        </div>
+        <el-button @click="visible = true">点击我一样是ele弹窗哦</el-button>
+        <el-dialog
+                title="提示"
+                :visible.sync="visible"
+                width="30%"
+                :before-close="handleClose">
+            <span>欢迎使用pl-table</span>
+            <span slot="footer" class="dialog-footer">
+            <el-button @click="visible = false">取 消</el-button>
+            <el-button type="primary" @click="visible = false">确 定</el-button>
+          </span>
+        </el-dialog>
+    </div>
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!--element的cdn方式可以不用引入，（当然你也可以引入）-->
+    <!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--注意你只需要引入如下文件，就可以使用element的所有组件，里面包含了pl-table组件哦-->
+    <script src="https://unpkg.com/pl-table/lib/index.js"></script>
+    <script>
+        var myApp = new Vue({
+            el: "#myApp",
+            data() {
+                return {
+                    visible: false,
+                    tableData: Array.from({length: 10000}, () => ({
+                        date: '2016-05-03',
+                        name: '王小虎',
+                        address: '上海市普陀区金沙江路 1516 弄'
+                    }))
+                }
+            },
+            methods: {
+                handleClose(done) {
+                    this.$confirm('确认关闭？')
+                        .then(_ => {
+                            done();
+                        })
+                        .catch(_ => {});
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

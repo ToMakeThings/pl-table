@@ -1,0 +1,62 @@
+{
+  "_from": "pl-table@^2.3.5",
+  "_id": "pl-table@2.3.5",
+  "_inBundle": false,
+  "_integrity": "sha512-ebJMC/dV1PRszE0+ArMijsMt/wHeQrjUw2oGzXSczv0hfdvPApG6GR3mF55cL+w8VifWMiDlKPlGJO4n3nLmzw==",
+  "_location": "/pl-table",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "pl-table@^2.3.5",
+    "name": "pl-table",
+    "escapedName": "pl-table",
+    "rawSpec": "^2.3.5",
+    "saveSpec": null,
+    "fetchSpec": "^2.3.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pl-table/-/pl-table-2.3.5.tgz",
+  "_shasum": "beb2939f19348653d89bfcf18614fc987a0827fa",
+  "_spec": "pl-table@^2.3.5",
+  "_where": "E:\\workingFile\\web-project\\pc-erp",
+  "author": {
+    "name": "penglei"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "element-ui": "^2.10.0",
+    "vue": "^2.6.10",
+    "vuedraggable": "^2.20.0"
+  },
+  "deprecated": false,
+  "description": "> 一个表格插件（完美解决万级数据渲染卡顿问题）",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^2.1.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "pl-table",
+  "scripts": {
+    "build": "webpack --progress --watch"
+  },
+  "version": "2.3.6"
+}
